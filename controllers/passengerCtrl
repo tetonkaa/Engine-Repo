@@ -1,6 +1,0 @@
-const express = require('express');
-const PassengerVehicle = require('./models/passengerVehicle');
-const router = express.Router();
-
-// Seed
-const collectionSeed = require('../models/collectionSeed.js');

@@ -11,12 +11,12 @@
     <h1 id="indexTitle">Engine Repo</h1>
     <h2> Buy or sell an exotic machine with ease</h2>>
 <nav>
-    <form action="/collection/new">
+    <form action="/passengerVehicle/new">
         <input class="navi" type="submit" value="ADD NEW" />
       </form>
 </nav>
 <ul id="index">
-    <% passengerVehicle.sort((a, b) => a.model.localeCompare(b.model)).forEach(passengerVehicle => { %>
+    <% passengerVehicles.sort((a, b) => a.model.localeCompare(b.model)).forEach(passengerVehicle => { %>
     <li>
         <a href="/passengerVehicle/<%=passengerVehicle._id; %>"> <img class="indexImg" src="<%= passengerVehicle.img %>" title="<%= passengerVehicle.model %>"> </a>
         <br/>
