@@ -27,9 +27,9 @@ router.post('/', (req, res) => {
 })
 
 //show route for passenger vehicles
-router.get('/:id', (req, res) => {
+router.get('/show/:id', (req, res) => {
     db.PassengerVehicle.findById(req.params.id, (err, foundPassengerVehicle) => {
-        res.render('show.ejs', {
+        res.render("show.ejs", {
             passengerVehicle: foundPassengerVehicle,
             index: req.params.id,
             tabTitle: foundPassengerVehicle.model

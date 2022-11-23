@@ -4,7 +4,7 @@ const recreationalSchema = new mongoose.Schema({
     make: String,
     type: String,
     engineSize: String,
-    style: String,
+    name: String,
     description: String,
     img: String,
     color: String,

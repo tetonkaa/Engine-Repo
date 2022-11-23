@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body>
+    <div id="vehicle">
+        <h1><%= passengerVehicle.name %></h1>
+        <img src=<%= passengerVehicle.img %> width="300"/>
+        <p>Color: <%= passengerVehicle.color %></p>
+        <p><%= passengerVehicle.description %></p>
+        <p>Price: $<%= passengerVehicle.price %></p>
+    </div>
+    <a href="/passengerVehicle/<%= passengerVehicle._id %>/edit"><button>Edit Vehicle</button></a>
+    <form action="/passengerVehicle/<%= passengerVehicle._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete Vehicle</button>
+    </form>
+    <form action="/product/<%= passengerVehicle._id %>/buy?_method=PUT" method="POST">
+        <button type="submit">Buy</button>
+    </form>
+    <a href="/"><button>HOME</button></a>
+</body>
+</html>

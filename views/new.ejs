@@ -2,34 +2,12 @@
 <html lang="en">
 
 <head>
-    <%- include ('./partials/head.ejs') %>
-        <link rel="stylesheet" href="/styles/showPage.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
 </head>
 
 <body>
-    <%- include ('./partials/stars.ejs') %>
-        <div class="flex-container">
-            <a href="/"><button>Home</button></a>
-            <form action="/entry/<%= entry._id %>?_method=DELETE" method="POST">
-                <button type="submit">Delete Entry</button>
-            </form>
-            <a href='/entry/<%= entry._id %>/edit'><button>Edit Entry</button></a>
-        </div>
-        <main class="flex-container">
-            <div id="entry" class="model-object">
-                <h1>
-                    Star Date <%= entry.starDate %>
-                </h1>
-                <br />
-                <h3>
-                    <%= entry.content %>
-                </h3>
-                <br />
-                <p>
-                    Author: <%= entry.author %>
-                </p>
-            </div>
-        </main>
+ 
+
 </body>
 
 </html>

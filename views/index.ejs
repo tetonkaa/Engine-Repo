@@ -9,19 +9,35 @@
 </head>
 <body>
     <h1 id="indexTitle">Engine Repo</h1>
-    <h2> Buy or sell an exotic machine with ease</h2>>
+    <h2> Buy or sell an exotic machine with ease</h2>
 <nav>
     <form action="/passengerVehicle/new">
         <input class="navi" type="submit" value="ADD NEW" />
       </form>
 </nav>
+
 <ul id="index">
-    <% passengerVehicles.sort((a, b) => a.model.localeCompare(b.model)).forEach(passengerVehicle => { %>
-    <li>
-        <a href="/passengerVehicle/<%=passengerVehicle._id; %>"> <img class="indexImg" src="<%= passengerVehicle.img %>" title="<%= passengerVehicle.model %>"> </a>
-        <br/>
-    </li>
-    <% }) %>
+        <% for (let passengerVehicle of passengerVehicles) { %>
+            <li>
+                <h3><%=passengerVehicle.model%></h3>
+                <a href="/passengerVehicle/show/<%=passengerVehicle._id%>">
+                <img src=<%=passengerVehicle.img %> width="300"/>
+                </a>
+                <p>$<%=passengerVehicle.price%></p>
+                <p><%=passengerVehicle.description%></p>
+            </li>
+        <% } %>
+        <% for (let recreationalVehicle of recreationalVehicles) { %>
+            <li>
+                <h3><%=recreationalVehicle.name%></h3>
+                <a href="/recreationalVehicle/show/<%=recreationalVehicle._id%>">
+                <img src=<%=recreationalVehicle.img %> width="300"/>
+                </a>
+                <p>$<%=recreationalVehicle.price%></p>
+                <p><%=recreationalVehicle.description%></p>
+            </li>
+        <% } %>
+       
 </ul>
 </body>
 </html>

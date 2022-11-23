@@ -27,10 +27,8 @@ const recreationalCtrl = require('./controllers/recreationalCtrl')
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
-app.use((req, res, next) => {
-    console.log('I run for all routes');
-    next();
-});
+//app.set('view engine', 'ejs')
+
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
