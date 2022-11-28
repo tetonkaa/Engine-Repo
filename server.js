@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
 const { default: mongoose } = require("mongoose");
-
-const port = 3000
+require('dotenv').config()
+const port = process.env.PORT
 
 //Acess Models
 
