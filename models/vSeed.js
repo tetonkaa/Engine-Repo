@@ -55,6 +55,26 @@ const recreationalVeh = [
     img: 'https://upload.wikimedia.org/wikipedia/commons/8/89/M24_Chaffee_33314_4CV_pic07.JPG',
     color: 'Olive',
     price: '120000',
+},
+{
+    make: 'SeaDoo',
+    type: 'Jetski',
+    engineSize: '130hp',
+    name: 'GTI 130',
+    description: 'Its a motorcycle that rides on water ',
+    img: 'https://getmyboat-user-images1.imgix.net/images/611aa88ae4dd3/-processed.jpg?ixlib=js-3.6.1&auto=compress%2Cenhance%2Cformat&w=900&q=50&dpr=1',
+    color: 'Gray-Blue',
+    price: '13000',
+},
+{
+    make: 'SeaDoo',
+    type: 'Jetski',
+    engineSize: '130hp',
+    name: 'GTI 130',
+    description: 'Its a motorcycle that rides on water ',
+    img: 'https://getmyboat-user-images1.imgix.net/images/611aa88ae4dd3/-processed.jpg?ixlib=js-3.6.1&auto=compress%2Cenhance%2Cformat&w=900&q=50&dpr=1',
+    color: 'Gray-Blue',
+    price: '13000',
 }]
 
 
