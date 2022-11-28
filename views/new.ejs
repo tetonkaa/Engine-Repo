@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <%- include ('./partials/head.ejs') %>
     <link rel="stylesheet" href="/styles/styles.css" />
 </head>
 
 <body>
 
     <div id="flex-container">
-        <form action="/new/" method="post">
-            <label for="author">Author:</label>
-            <input type="text" name="author"/>
-            <label for="content">Content:</label>
-            <textarea name="content"></textarea>
-            <label for="starDate">Star Date:</label>
-            <input type="number" name="starDate" value="12022" />
-            <button type="submit">Log Entry</button>
+        <form action="/passengerVehicle/" method="post">
+            <ul> 
+            <label for="make">Make:</label>
+            <input type="text" name="make"/>
+            <label for="model">Model:</label>
+            <input type="text" name="model"/>
+            <label for="img">Photo (URL):</label>
+            <input type="text" name="img"/>
+            <label for="description">Description:</label>
+            <textarea name="description"></textarea>
+            <label for="color">Color:</label>
+            <textarea name="color"></textarea>
+            <label for="price">price:</label>
+            <input type="number" name="price" value="15000" />
+            <button type="submit">List Vehicle</button>
+            </ul>
         </form>
     </div>
 

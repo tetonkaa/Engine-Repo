@@ -5,6 +5,13 @@ const router = express.Router();
 
 
 
+// Post route
+router.post('/', (req, res) => {
+    db.PassengerVehicle.create(req.body, (err, passengerVehicle) => {
+        //redirects it to home page after created
+        res.redirect('/') 
+    })
+})
 
 // New route
 router.get('/new', (req, res) => {
@@ -13,18 +20,6 @@ router.get('/new', (req, res) => {
     })
 })
 
-// Post route
-router.post('/', (req, res) => {
-    if (req.body.visited) {
-        req.body.visited = true
-    } else {
-        req.body.visited = false
-    }
-    db.PassengerVehicle.create(req.body, (err, passengerVehicle) => {
-        res.redirect('/passengerVehicle/' + passengerVehicle._id)
-        
-    })
-})
 
 //show route for passenger vehicles
 router.get('/show/:id', (req, res) => {
@@ -32,8 +27,7 @@ router.get('/show/:id', (req, res) => {
         res.render("show.ejs", {
             passengerVehicle: foundPassengerVehicle,
             index: req.params.id,
-            tabTitle: foundPassengerVehicle.model
-        })
+                    })
     })
 });
 
@@ -58,7 +52,7 @@ router.get('/:id/edit', (req, res) => {
 
 router.put('/:id', (req, res) => {
     db.PassengerVehicle.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, foundPassengerVehicle) => {
-        res.redirect('/passengerVehicle/' + req.params.id)
+        res.redirect('/')
     })
 })
 

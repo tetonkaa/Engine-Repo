@@ -27,3 +27,24 @@ a:hover { text-decoration: none;
 a:active { text-decoration: none; }
 
 a { color: inherit; } 
+
+
+#modal {
+    background-color: rgba(94, 94, 94, 0.9);
+    position: fixed;
+    top: 0%;
+    left: 15%;
+    height: 75%;
+    width: 75%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+    border: groove rgb(255, 255, 255);
+    justify-content: center;
+    padding: 250px 50px;
+        
+}
+
+#modal-footer {
+    justify-content: bottom;
+}

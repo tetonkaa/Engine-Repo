@@ -21,4 +21,15 @@ router.post('/', (req, res) => {
     })
 })
 
+//show route for recreational vehicles
+router.get('/show/:id', (req, res) => {
+    db.RecreationalVehicle.findById(req.params.id, (err, foundRecreationalVehicle) => {
+        res.render("recShow.ejs", {
+            recreationalVehicle: foundRecreationalVehicle,
+            index: req.params.id,
+            tabTitle: foundRecreationalVehicle.name
+        })
+    })
+});
+
 module.exports = router;

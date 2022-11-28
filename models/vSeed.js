@@ -32,7 +32,7 @@ const passengerVeh = [
     img: 'https://bringatrailer.com/wp-content/uploads/2017/09/59e127aed8b62_IMG_1592-1.jpg?fit=940%2C649',
     color: 'Silver',
     price: 15000
-},]
+}]
 
 
 const recreationalVeh = [
@@ -42,7 +42,7 @@ const recreationalVeh = [
     engineSize: '998cc',
     name: 'cbr1000',
     description: 'Quick responsive clutch, DOHC four-cylinder engine, agile enough to weave through traffic. ',
-    img: 'https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/132789487_1728404687342385_7954500342135602202_n.jpg?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=sQscyHKIBsEAX_USFig&_nc_ht=scontent-dfw5-2.xx&oh=00_AfD1mQWdtcOyOi4z3O8NKGIFp04I9i2PX-lp72Zxnc3W-A&oe=63A619CB',
+    img: 'https://www.cbrxx.com/attachments/pxl_20220325_184448608-jpg.133464',
     color: 'Black',
     price: '11000',
 },
@@ -56,6 +56,7 @@ const recreationalVeh = [
     color: 'Olive',
     price: '120000',
 }]
+
 
 
 db.PassengerVehicle.deleteMany({}, (err, passengerVehicles) => {

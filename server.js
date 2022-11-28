@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/passengerVehicle', require('./controllers/passengerCtrl'));
-app.use('/recreationalVehicles', recreationalCtrl)
+app.use('/recreationalVehicle', require('./controllers/recreationalCtrl'));
 
 //Listener
 //Binds and listens to connections on specified host and port
