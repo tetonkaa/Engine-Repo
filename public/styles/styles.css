@@ -1,6 +1,7 @@
 .staticNav {
     overflow: hidden ;
-  background-color: #333;
+  background-image: url('../navBanner/lamboBanner2.jpg');
+  background-position: center; /* Center the image */
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -13,9 +14,12 @@
 
 body {
     margin-top:200px;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,239,239,1) 100%); 
     color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
 }
+
 
 a:link { text-decoration: none; }
 
@@ -32,16 +36,15 @@ a { color: inherit; }
 #modal {
     background-color: rgba(94, 94, 94, 0.9);
     position: fixed;
-    top: 0%;
-    left: 15%;
-    height: 75%;
-    width: 75%;
+    top: 30%;
+    left: 35%;
+    width: 25%;
     z-index: 1;
     overflow: auto;
     display: none;
     border: groove rgb(255, 255, 255);
     justify-content: center;
-    padding: 250px 50px;
+    padding: 100px 10px;
         
 }
 
