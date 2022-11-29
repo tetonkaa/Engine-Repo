@@ -32,4 +32,12 @@ router.get('/show/:id', (req, res) => {
     })
 });
 
+//delete route
+router.delete('/:id', (req, res) => {
+
+    db.RecreationalVehicle.findByIdAndRemove(req.params.id, (err, foundRecreationalVehicle) => {
+        res.redirect('/')
+    })
+})
+
 module.exports = router;
