@@ -21,13 +21,16 @@
     </div>
   </nav> -->
 
-
+<div class="cardContainer">
 <div class="row">
 <div class="col">
     <% for (let passengerVehicle of passengerVehicles) { %>
-    <div class="card text-white bg-dark mb-3">
+    <div class="card bg-dark mb-3" id="cardDimensions">
+      
       <a href="/passengerVehicle/show/<%=passengerVehicle._id%>">
-      <img class="card-img-top" style="height: 550px" src=<%=passengerVehicle.img %> alt="Card image cap">
+        <div class="imageContainer">
+          <img class="card-img-top" id="imageDimensions" src=<%=passengerVehicle.img %> alt="Card image cap">
+        </div>
       <div class="card-body">
           <h5 class="card-title"><%=passengerVehicle.model%></h5>
           <p class="card-text"><%=passengerVehicle.description%></p>
@@ -41,9 +44,11 @@
 </div>
 <div class="col">
     <% for (let recreationalVehicle of recreationalVehicles) { %>
-    <div class="card bg-dark mb-3">
+    <div class="card bg-dark mb-3" id="cardDimensions">
     <a href="/recreationalVehicle/show/<%=recreationalVehicle._id%>">
-      <img class="card-img-top" style="height: 550px" src=<%=recreationalVehicle.img %> alt="Card image cap">
+      <div class="imageContainer">
+        <img class="card-img-top" id="imageDimensions"  src=<%=recreationalVehicle.img %> alt="Card image cap">
+      </div>
             <div class="card-body">
         <h5 class="card-title"><%=recreationalVehicle.name%></h5>
         <p class="card-text"><%=recreationalVehicle.description%></p>
@@ -55,6 +60,7 @@
     </a>
         <% } %>
 </div>
- </div> 
+ </div>
+</div> 
 </body>
 </html>

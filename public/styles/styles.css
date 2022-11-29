@@ -1,3 +1,6 @@
+/* *{
+    border:rgb(255, 0, 0) dotted;
+} */
 .staticNav {
     overflow: hidden ;
   background-image: url('../navBanner/lamboBanner2.jpg');
@@ -15,7 +18,8 @@
 body {
     margin-top:200px;
     background: rgb(255,255,255);
-    background: linear-gradient(257deg, rgba(255,255,255,1) 0%, rgba(252,217,11,1) 100%);  
+    background: linear-gradient(257deg, rgba(255,255,255,1) 0%, rgba(252,217,11,1) 100%);
+    background-repeat: no-repeat;  
     color: whitesmoke;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -50,4 +54,25 @@ a { color: inherit; }
 
 #modal-footer {
     justify-content: bottom;
+}
+
+.cardContainer {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+#cardDimensions{
+    max-height:600px;
+    max-width: 550px;
+    
+}
+#imageDimensions{
+    max-height: 450px;
+    max-width:548px;
+}
+.imageContainer{
+    height: 450px;
+    width: 550px;
 }
