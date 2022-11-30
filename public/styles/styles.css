@@ -25,10 +25,19 @@ body {
     background-attachment: fixed
 }
 
-.flex-container{
+#flex-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding-top: 200px;
+}
+
+#flex-container2{
+    display: flex;
+    justify-items:center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 25vw;
 }
 
 a:link { text-decoration: none; }
@@ -86,11 +95,11 @@ a { color: inherit; }
 #vehicle {
     display: flex;
     flex-direction: column;
-    background-color:rgb(0, 0, 0, .5) ;
+    background-color:rgb(0, 0, 0, .7) ;
     flex-grow: 4;
     padding: 0 0 0 0;
     backdrop-filter: blur(5px);
-    backdr
+    
     
     
     
@@ -102,3 +111,4 @@ a { color: inherit; }
     max-width:650px;
     align-self: center;
 }
+

@@ -80,34 +80,16 @@ const recreationalVeh = [
 
 
 db.PassengerVehicle.deleteMany({}, (err, passengerVehicles) => {
-    if (err) {
-        console.log('Error occured in remove', err)
-    } else {
-        console.log('Removed all locations')
-
         db.PassengerVehicle.insertMany(passengerVeh, (err, ) => {
-            if (err) {
-                console.log('Error occured in insertMany', err)
-            } else {
-                console.log('Created', passengerVehicles.length, "passenger vehicles")
-            }
+
         })
     }
-})
+)
 
 db.RecreationalVehicle.deleteMany({}, (err, recreationalVehicles) => {
-    if (err) {
-        console.log('Error occured in remove', err)
-    } else {
-        console.log('Removed all locations')
-
         db.RecreationalVehicle.insertMany(recreationalVeh, (err, ) => {
-            if (err) {
-                console.log('Error occured in insertMany', err)
-            } else {
-                console.log('Created', recreationalVehicles.length, "passenger vehicles")
-            }
+           
         })
     }
-})
+)
 

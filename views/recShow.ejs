@@ -15,6 +15,7 @@
         <img id="vehShow" src=<%= recreationalVehicle.img %> width="300"/>
         <p>Color: <%= recreationalVehicle.color %></p>
         <p><%= recreationalVehicle.description %></p>
+        <p>Engine Size: <%= recreationalVehicle.engineSize %></p>
         <p>Price: $<%= recreationalVehicle.price %></p>
     </div>
         <form action="/recreationalVehicle/<%= recreationalVehicle._id %>?_method=DELETE" method="POST">
