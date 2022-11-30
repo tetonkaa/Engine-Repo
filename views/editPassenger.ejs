@@ -12,13 +12,16 @@
 <body>
     
     <a href="/"><button>Home</button></a>
-            <form class="flex-container" action="/passengerVehicle/<%= passengerVehicle._id %>?_method=PUT" method="post">
+        <form class="flex-container" action="/passengerVehicle/<%= passengerVehicle._id %>?_method=PUT" method="post">
             <label for="make">Make:</label>
             <input type="text" name="make" value="<%= passengerVehicle.make %>" />
-            <label for="model">Model:</label>
-            <textarea name="model" ><%= passengerVehicle.model %></textarea>
+            <br>
+            <label for="model">Model:</label>                       
+            <input name="model" ><%= passengerVehicle.model %></textarea>
+            <br>
             <label for="Price">Price:</label>
             <input type="number" name="price" value="<%= passengerVehicle.Price %>" />
+            <br>
             <button type="submit">Edit Listing</button>
         </form>
 
